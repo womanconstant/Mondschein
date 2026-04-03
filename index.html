@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tagespflege in Düsseldorf</title>
-  <meta name="description" content="Tagespflege in Düsseldorf – Entlastung für Angehörige, liebevolle Betreuung für Senioren, kostenloser Probetag und persönliche Beratung.">
+  <title>Mondschein Tagespflege in Düsseldorf</title>
+  <meta name="description" content="Mondschein Tagespflege in Düsseldorf – liebevolle Tagespflege für Senioren, Entlastung für Angehörige, kostenloser Schnuppertag und persönliche Beratung.">
   <style>
     :root{
       --bg:#f7f3ee;
@@ -19,12 +19,13 @@
       --shadow:0 10px 30px rgba(50,40,30,.08);
     }
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
     .container{width:min(var(--max),calc(100% - 32px));margin:0 auto}
 
-    .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
     .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
     .brand{font-size:24px;font-weight:700}
     .brand small{display:block;font-size:12px;color:var(--muted);font-weight:400}
@@ -42,7 +43,7 @@
     .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
     .eyebrow{display:inline-block;margin-bottom:14px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent-dark)}
     h1,h2,h3{line-height:1.2;margin:0 0 14px}
-    h1{font-size:clamp(34px,5vw,58px);max-width:10ch}
+    h1{font-size:clamp(34px,5vw,58px);max-width:11ch}
     h2{font-size:clamp(28px,3.5vw,40px)}
     h3{font-size:22px}
     p{margin:0 0 14px}
@@ -73,6 +74,8 @@
     .caption{font-size:14px;color:var(--muted);margin-top:8px}
 
     .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .cta-strip{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .cta-strip p{margin-bottom:16px}
     .footer{border-top:1px solid var(--border);padding:24px 0 40px;color:var(--muted)}
     .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
@@ -89,8 +92,11 @@
     <div class="container topbar-inner">
       <div class="brand">Mondschein<small>Tagespflege in Düsseldorf</small></div>
       <nav class="nav">
+        <a href="#fuer-wen">Für wen</a>
         <a href="#leistungen">Leistungen</a>
         <a href="#ablauf">Tagesablauf</a>
+        <a href="#kosten">Kosten</a>
+        <a href="#schnuppertag">Schnuppertag</a>
         <a href="#raeume">Räumlichkeiten</a>
         <a href="#team">Team</a>
         <a href="#kontakt">Kontakt</a>
@@ -104,20 +110,48 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Tagespflege in Düsseldorf</span>
-          <h1>Entlastung für Angehörige. Betreuung mit Herz.</h1>
-          <p class="lead">Wir begleiten ältere Menschen tagsüber in einer sicheren, warmen und familiären Umgebung – mit Struktur, Aktivität und persönlicher Zuwendung.</p>
+          <h1>Liebevolle Tagespflege für Senioren. Entlastung für Angehörige.</h1>
+          <p class="lead">In unserer Tagespflege begleiten wir ältere Menschen tagsüber in einer sicheren, familiären und wertschätzenden Umgebung – mit Struktur, Gemeinschaft und persönlicher Betreuung.</p>
           <ul class="hero-points">
             <li>Pflegekasse übernimmt Kosten anteilig</li>
-            <li>Kostenloser Probetag</li>
-            <li>Fahrdienst möglich</li>
+            <li>Kostenloser Schnuppertag möglich</li>
+            <li>Fahrdienst auf Wunsch</li>
           </ul>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#kontakt">Probetag anfragen</a>
+            <a class="btn btn-primary" href="#kontakt">Kostenlosen Schnuppertag anfragen</a>
             <a class="btn btn-secondary" href="tel:+49211123456">Jetzt anrufen</a>
           </div>
         </div>
         <div class="hero-image">
           <img src="images/hero.jpg" alt="Senioren in der Tagespflege beim gemeinsamen Essen">
+        </div>
+      </div>
+    </section>
+
+    <section id="fuer-wen">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Für wen</span>
+          <h2>Für wen ist unsere Tagespflege geeignet?</h2>
+          <p>Unsere Tagespflege richtet sich an ältere Menschen, die tagsüber Betreuung, Struktur und Gemeinschaft wünschen und weiterhin in ihrem eigenen Zuhause leben möchten.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <h3>Senioren mit Pflegegrad</h3>
+            <p>Geeignet für Menschen mit Pflegegrad 2 bis 5.</p>
+          </div>
+          <div class="card">
+            <h3>Menschen mit Demenz</h3>
+            <p>Ein strukturierter Tagesablauf gibt Orientierung und Sicherheit.</p>
+          </div>
+          <div class="card">
+            <h3>Alleinlebende Senioren</h3>
+            <p>Gemeinschaft und Aktivität statt Einsamkeit im Alltag.</p>
+          </div>
+          <div class="card">
+            <h3>Angehörige</h3>
+            <p>Spürbare Entlastung für Familien, die Unterstützung brauchen.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -180,6 +214,55 @@
       </div>
     </section>
 
+    <section id="kosten">
+      <div class="container grid-2">
+        <div class="card">
+          <span class="eyebrow">Kosten & Pflegekasse</span>
+          <h2>Wir beraten Sie auch zu den Kosten</h2>
+          <p>Die Kosten für die Tagespflege werden – je nach Pflegegrad – größtenteils von der Pflegekasse übernommen.</p>
+          <p>Wir helfen Ihnen dabei, die Möglichkeiten für Ihren Angehörigen zu verstehen, und unterstützen Sie auf Wunsch bei allen Anträgen.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Kostenlose Beratung anfragen</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Was wir mit Ihnen klären</h3>
+          <p>• Pflegegrad 2 bis 5</p>
+          <p>• Mögliche Kostenübernahme durch die Pflegekasse</p>
+          <p>• Zusätzliche Entlastungsleistungen</p>
+          <p>• Persönliche und unverbindliche Beratung</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schnuppertag">
+      <div class="container">
+        <div class="cta-strip">
+          <span class="eyebrow">Schnuppertag</span>
+          <h2>Lernen Sie unsere Tagespflege unverbindlich kennen</h2>
+          <p>Ein kostenloser Schnuppertag gibt Ihnen und Ihrem Angehörigen die Möglichkeit, unsere Räume, unser Team und unseren Alltag in Ruhe kennenzulernen.</p>
+          <div class="grid-3">
+            <div>
+              <h3>1. Kennenlernen</h3>
+              <p class="muted">Ihr Angehöriger erlebt unsere Tagespflege in einer vertrauten und freundlichen Atmosphäre.</p>
+            </div>
+            <div>
+              <h3>2. Eindruck gewinnen</h3>
+              <p class="muted">Sie sehen, wie ein typischer Tag abläuft und ob unser Angebot zu Ihren Bedürfnissen passt.</p>
+            </div>
+            <div>
+              <h3>3. Ohne Verpflichtung</h3>
+              <p class="muted">Der Schnuppertag ist kostenlos und unverbindlich.</p>
+            </div>
+          </div>
+          <div class="hero-actions" style="margin-top:16px;">
+            <a class="btn btn-primary" href="#kontakt">Schnuppertag anfragen</a>
+            <a class="btn btn-secondary" href="tel:+49211123456">Telefonisch beraten lassen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="raeume">
       <div class="container">
         <div class="section-head">
@@ -210,6 +293,7 @@
           <span class="eyebrow">Unser Team</span>
           <h2>Menschen machen den Unterschied</h2>
           <p>Unser Team arbeitet mit Geduld, Herzlichkeit und Erfahrung. Bei uns steht der Mensch im Mittelpunkt – jeden Tag.</p>
+          <p><strong>Feste Ansprechpartner, persönliche Betreuung und ein wertschätzender Umgang sind für uns selbstverständlich.</strong></p>
           <p><strong>„Hier fühlt sich meine Mutter endlich wieder wohl.“</strong><br><span class="muted">– Angehörige</span></p>
         </div>
         <div class="card">
@@ -223,10 +307,11 @@
         <div class="section-head">
           <span class="eyebrow">Einblicke</span>
           <h2>Ein Ort für Gemeinschaft und Alltag</h2>
+          <p>Hier sehen Sie beispielhaft, wie unser Alltag in der Tagespflege aussehen kann.</p>
         </div>
         <div class="grid-3 gallery">
-          <img src="images/essen.jpg" alt="Senioren beim Mittagessen">
-          <img src="images/aktivitaet.jpg" alt="Aktivitäten in der Tagespflege">
+          <img src="images/essen.jpg" alt="Senioren beim Mittagessen in der Tagespflege">
+          <img src="images/aktivitaet.jpg" alt="Gemeinsame Aktivität in der Tagespflege">
           <img src="images/raum2.jpg" alt="Essbereich der Tagespflege">
         </div>
       </div>
@@ -238,7 +323,7 @@
           <div>
             <span class="eyebrow">Kontakt</span>
             <h2>Lernen Sie uns persönlich kennen</h2>
-            <p>Vereinbaren Sie jetzt einen kostenlosen Probetag oder lassen Sie sich unverbindlich beraten.</p>
+            <p>Vereinbaren Sie jetzt einen kostenlosen Schnuppertag oder lassen Sie sich unverbindlich beraten.</p>
             <p><strong>Mondschein Tagespflege</strong><br>Musterstraße 12<br>40210 Düsseldorf</p>
           </div>
           <div>
