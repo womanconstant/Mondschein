@@ -1,5 +1,1 @@
-document.querySelectorAll('.faq-question').forEach(function(button) {
-  button.addEventListener('click', function() {
-    this.parentElement.classList.toggle('active');
-  });
-});
+document.addEventListener('DOMContentLoaded',function(){var t=document.querySelector('.menu-toggle');var m=document.getElementById('mobile-menu');if(!t||!m)return;t.addEventListener('click',function(){var o=m.classList.toggle('is-open');t.setAttribute('aria-expanded',o?'true':'false');});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('is-open');t.setAttribute('aria-expanded','false');});});});
